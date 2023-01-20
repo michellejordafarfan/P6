@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+        }
+        :root{
+            --color-primary:#FFA8BD;
+            --color-secundary:#FFF4CE;
+            --color-secundary2:#FFE99C;
+            --color-bg:#FFE3EA;
+            --color-black:#47242D;
+        }
+        .card_txt{
+            font-family: 'Roboto', sans-serif;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .card{
+            display: flex;
+            flex-grow: 1;
+            flex-basis: 26%;
+            flex-direction: column;
+            border:  solid 0.3em var(--color-primary);
+            background-color: var(--color-bg);
+            padding: 1em;
+        }
+        .card:nth-child(5), .card:nth-child(6){
+            flex: 1 3 30%;
+        } 
+        .card:nth-child(1), .card:nth-child(2), .card:nth-child(3), .card:nth-child(4){
+            flex: 1 3 20%;
+        } 
+        .card_img{
+            width: 100%;
+            height: 224px;
+        }
+        .card_img img{
+            object-fit: cover;
+            height: 100%;
+        }
+        .card_txt{
+            display: flex;
+            background-color: var(--color-secundary);
+            color: var(--color-black);
+            flex-direction: column;
+            justify-content:baseline;
+            height: 100%;
+            padding: 2em 0 0 0;
+        }
+        .card_txt h1{
+            flex-grow:1;
+            color:var(--color-black);
+            letter-spacing:0.15em;
+            background-color:var(--color-secundary2);
+            font-weight:200;
+            font-size:1em;
+        }
+        .card_txt h2{
+            color:var(--color-black);
+            display:flex;
+            justify-content:flex-start;
+            font-size:1.8em;
+            flex-grow:1;
+            font-weight:700;
+        }
+        .card_txt p{
+            justify-content:baseline;
+            padding: 1em 0 0 0;
+            font-family:'Bitter', serif;
+            font-weight:30;
+            font-size:0.8em;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/1.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Jean Le Pautre</h1>
+                    <h2>Elevation of a Royal Bedroom</h2>
+                    <p>	Jean Lepautre was the older brother of the architect Antoine Le Pautre. 
+                        He is mainly known for his enormous production of prints of which a 
+                        large part contains designs for architecture, the interior and ornament, 
+                        often based on his own designs</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/2.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Knapp & Company</h1>
+                    <h2>Pompano, from the series Fishers and Fish (N74)</h2>
+                    <p>	Trade cards from the "Fishers and Fish" series (N74), 
+                        issued in a set of 50 cards in 1888 to promote W. 
+                        Duke Sons & Co. brand cigarettes.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/3.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Thomas Cole</h1>
+                    <h2>The Titan's Goblet</h2>
+                    <p>	The culmination of Cole's romantic fantasies, this work echoes the 
+                        artist's other works of the period in its Italian derived scenery and 
+                        its attempt to illustrate themes dealing with the grandeur of the past, 
+                        the passage of time, and the encroachment of nature. </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/4.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Knapp & Company</h1>
+                    <h2>Muskallonge, from the series Fishers and Fish (N74)</h2>
+                    <p>	Trade cards from the "Fishers and Fish" series (N74), 
+                        issued in a set of 50 cards in 1888 to promote 
+                        W. Duke Sons & Co. brand cigarettes.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/5.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>Goodwin & Company</h1>
+                    <h2>Cricket, from the Games and Sports series (N165) for Old Judge Cigarettes</h2>
+                    <p>	The "Games and Sports" series of trading cards (N165) was issued
+                        by Goodwin & Company in 1889 to promote Old Judge Cigarettes. 
+                        The Metropolitan Museum of Art owns all 50 cards in the series.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/6.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>West Bengal</h1>
+                    <h2>Shri Sheshanarayana</h2>
+                    <p>	Here we see Vishnu Narayana—the primordial god who resides in water 
+                        (nara)—stirring from his slumber on the cosmic ocean supported by the 
+                        divine serpent Shesha, a celebrated moment that simultaneously marks 
+                        the end of the monsoon season and the beginning of a new age (kalpa).</p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
